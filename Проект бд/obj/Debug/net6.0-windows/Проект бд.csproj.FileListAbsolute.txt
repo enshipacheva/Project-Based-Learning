@@ -1,0 +1,20 @@
+C:\Users\admin\source\repos\Проект бд\Проект бд\bin\Debug\net6.0-windows\Проект бд.exe
+C:\Users\admin\source\repos\Проект бд\Проект бд\bin\Debug\net6.0-windows\Проект бд.deps.json
+C:\Users\admin\source\repos\Проект бд\Проект бд\bin\Debug\net6.0-windows\Проект бд.runtimeconfig.json
+C:\Users\admin\source\repos\Проект бд\Проект бд\bin\Debug\net6.0-windows\Проект бд.dll
+C:\Users\admin\source\repos\Проект бд\Проект бд\bin\Debug\net6.0-windows\Проект бд.pdb
+C:\Users\admin\source\repos\Проект бд\Проект бд\bin\Debug\net6.0-windows\System.Data.OleDb.dll
+C:\Users\admin\source\repos\Проект бд\Проект бд\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Data.OleDb.dll
+C:\Users\admin\source\repos\Проект бд\Проект бд\obj\Debug\net6.0-windows\Проект бд.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\Проект бд\Проект бд\obj\Debug\net6.0-windows\Проект_бд.Form1.resources
+C:\Users\admin\source\repos\Проект бд\Проект бд\obj\Debug\net6.0-windows\Проект бд.csproj.GenerateResource.cache
+C:\Users\admin\source\repos\Проект бд\Проект бд\obj\Debug\net6.0-windows\Проект бд.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\source\repos\Проект бд\Проект бд\obj\Debug\net6.0-windows\Проект бд.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\Проект бд\Проект бд\obj\Debug\net6.0-windows\Проект бд.AssemblyInfo.cs
+C:\Users\admin\source\repos\Проект бд\Проект бд\obj\Debug\net6.0-windows\Проект бд.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\Проект бд\Проект бд\obj\Debug\net6.0-windows\Проект бд.csproj.CopyComplete
+C:\Users\admin\source\repos\Проект бд\Проект бд\obj\Debug\net6.0-windows\Проект бд.dll
+C:\Users\admin\source\repos\Проект бд\Проект бд\obj\Debug\net6.0-windows\refint\Проект бд.dll
+C:\Users\admin\source\repos\Проект бд\Проект бд\obj\Debug\net6.0-windows\Проект бд.pdb
+C:\Users\admin\source\repos\Проект бд\Проект бд\obj\Debug\net6.0-windows\Проект бд.genruntimeconfig.cache
+C:\Users\admin\source\repos\Проект бд\Проект бд\obj\Debug\net6.0-windows\ref\Проект бд.dll
