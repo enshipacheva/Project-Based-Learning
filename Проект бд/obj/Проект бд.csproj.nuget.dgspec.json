@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kate\\Downloads\\Проект бд\\Проект бд\\Проект бд\\Проект бд.csproj": {}
+    "D:\\Кафедра\\Проектное\\Суханов\\Проект бд\\Проект бд.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kate\\Downloads\\Проект бд\\Проект бд\\Проект бд\\Проект бд.csproj": {
+    "D:\\Кафедра\\Проектное\\Суханов\\Проект бд\\Проект бд.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kate\\Downloads\\Проект бд\\Проект бд\\Проект бд\\Проект бд.csproj",
+        "projectUniqueName": "D:\\Кафедра\\Проектное\\Суханов\\Проект бд\\Проект бд.csproj",
         "projectName": "Проект бд",
-        "projectPath": "C:\\Users\\Kate\\Downloads\\Проект бд\\Проект бд\\Проект бд\\Проект бд.csproj",
+        "projectPath": "D:\\Кафедра\\Проектное\\Суханов\\Проект бд\\Проект бд.csproj",
         "packagesPath": "C:\\Users\\Kate\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kate\\Downloads\\Проект бд\\Проект бд\\Проект бд\\obj\\",
+        "outputPath": "D:\\Кафедра\\Проектное\\Суханов\\Проект бд\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Kate\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0-windows7.0"
+          "net6.0-windows"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {},
@@ -55,7 +55,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -67,7 +68,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

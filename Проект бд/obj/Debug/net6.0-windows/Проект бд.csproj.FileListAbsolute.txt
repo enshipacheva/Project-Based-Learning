@@ -18,3 +18,24 @@ C:\Users\admin\source\repos\Проект бд\Проект бд\obj\Debug\net6.0
 C:\Users\admin\source\repos\Проект бд\Проект бд\obj\Debug\net6.0-windows\Проект бд.pdb
 C:\Users\admin\source\repos\Проект бд\Проект бд\obj\Debug\net6.0-windows\Проект бд.genruntimeconfig.cache
 C:\Users\admin\source\repos\Проект бд\Проект бд\obj\Debug\net6.0-windows\ref\Проект бд.dll
+D:\Кафедра\Проектное\Суханов\Проект бд\bin\Debug\net6.0-windows\Проект бд.exe
+D:\Кафедра\Проектное\Суханов\Проект бд\bin\Debug\net6.0-windows\Проект бд.deps.json
+D:\Кафедра\Проектное\Суханов\Проект бд\bin\Debug\net6.0-windows\Проект бд.runtimeconfig.json
+D:\Кафедра\Проектное\Суханов\Проект бд\bin\Debug\net6.0-windows\Проект бд.dll
+D:\Кафедра\Проектное\Суханов\Проект бд\bin\Debug\net6.0-windows\Проект бд.pdb
+D:\Кафедра\Проектное\Суханов\Проект бд\bin\Debug\net6.0-windows\System.Data.OleDb.dll
+D:\Кафедра\Проектное\Суханов\Проект бд\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Data.OleDb.dll
+D:\Кафедра\Проектное\Суханов\Проект бд\obj\Debug\net6.0-windows\Проект бд.csproj.AssemblyReference.cache
+D:\Кафедра\Проектное\Суханов\Проект бд\obj\Debug\net6.0-windows\Проект_бд.Form1.resources
+D:\Кафедра\Проектное\Суханов\Проект бд\obj\Debug\net6.0-windows\Проект_бд.Form3.resources
+D:\Кафедра\Проектное\Суханов\Проект бд\obj\Debug\net6.0-windows\Проект бд.csproj.GenerateResource.cache
+D:\Кафедра\Проектное\Суханов\Проект бд\obj\Debug\net6.0-windows\Проект бд.GeneratedMSBuildEditorConfig.editorconfig
+D:\Кафедра\Проектное\Суханов\Проект бд\obj\Debug\net6.0-windows\Проект бд.AssemblyInfoInputs.cache
+D:\Кафедра\Проектное\Суханов\Проект бд\obj\Debug\net6.0-windows\Проект бд.AssemblyInfo.cs
+D:\Кафедра\Проектное\Суханов\Проект бд\obj\Debug\net6.0-windows\Проект бд.csproj.CoreCompileInputs.cache
+D:\Кафедра\Проектное\Суханов\Проект бд\obj\Debug\net6.0-windows\Проект бд.csproj.CopyComplete
+D:\Кафедра\Проектное\Суханов\Проект бд\obj\Debug\net6.0-windows\Проект бд.dll
+D:\Кафедра\Проектное\Суханов\Проект бд\obj\Debug\net6.0-windows\refint\Проект бд.dll
+D:\Кафедра\Проектное\Суханов\Проект бд\obj\Debug\net6.0-windows\Проект бд.pdb
+D:\Кафедра\Проектное\Суханов\Проект бд\obj\Debug\net6.0-windows\Проект бд.genruntimeconfig.cache
+D:\Кафедра\Проектное\Суханов\Проект бд\obj\Debug\net6.0-windows\ref\Проект бд.dll
