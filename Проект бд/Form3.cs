@@ -13,9 +13,8 @@ namespace Проект_бд
 {
     public partial class Form3 : Form
     {
-        public static string connectString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=rezba.mdb;";
-
         private OleDbConnection myConnection;
+        public static string connectString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=rezba.mdb;";
 
         public Form ReturnForm;
         public Form3()

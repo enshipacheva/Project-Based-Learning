@@ -28,7 +28,7 @@ namespace Проект_бд
             TwoZero.Open();
             Diameters.Open();
         }
-        private void  box1Button1_Click (object sender, System.EventArgs e)
+        private void  box1Button1_Click (object sender, System.EventArgs e)//Нажатие на кнопку вопроса
         {
             //const string message = ;
             MessageBox.Show("ГОСТ ISO 898-1-2014" +
@@ -80,14 +80,114 @@ namespace Проект_бд
             }
             e.Handled = true;
         }
-        private void box1CheckBox1_Click(object sender, System.EventArgs e){
-            if(box1CheckBox1.Checked){
+        private void box1CheckBox1_Click(object sender, System.EventArgs e){//Проверка отметки на чекбоксе "Мелкий шаг"
+            if(box1CheckBox1.Checked)
+            {
             groupBox1.Controls.Add(this.box1Label2);
             groupBox1.Controls.Add(this.box1ComboBox1);
             }
-            if(!box1CheckBox1.Checked){
+            else
+            {
             groupBox1.Controls.Remove(this.box1Label2);
             groupBox1.Controls.Remove(this.box1ComboBox1);
+            }
+        }
+        private void box4CheckBox1_Click(object sender, System.EventArgs e){//При клике на чекбокс в 4 боксе "Резьба с двух сторон"
+            if(box4CheckBox1.Checked){
+                groupBox4.Controls.Add(this.box4TextBox2);
+                groupBox4.Controls.Add(this.box4Label3);
+                groupBox4.Controls.Add(this.box4Label2);
+                groupBox4.Controls.Add(this.box4TextBox1);
+                groupBox4.Controls.Add(this.box4Label9);
+                groupBox4.Controls.Add(this.box4Label10);
+                box4Pic1.Image = Image.FromFile("Image/Sh2.jpg");
+            }
+            else
+            {
+                groupBox4.Controls.Remove(this.box4TextBox2);
+                groupBox4.Controls.Remove(this.box4Label3);
+                groupBox4.Controls.Remove(this.box4Label2);
+                groupBox4.Controls.Remove(this.box4TextBox1);
+                groupBox4.Controls.Remove(this.box4Label9);
+                groupBox4.Controls.Remove(this.box4Label10);
+                box4Pic1.Image = Image.FromFile("Image/Sh1.jpg");
+            }
+        }
+        private void bradInit()//Инициализация интерфейса для шпильки
+        {
+                box4Pic1.Size = new System.Drawing.Size(310,145);
+                box4Pic1.Location = new System.Drawing.Point(5,400-145-5);
+                groupBox4.Controls.Add(this.box1Label3);
+                groupBox4.Controls.Add(this.box1TextBox2);
+                groupBox4.Controls.Add(this.box4CheckBox1);
+                groupBox4.Controls.Add(this.box4Pic1);
+                groupBox4.Controls.Add(this.box4Label15);
+                groupBox4.Controls.Add(this.box4TextBox7);
+                groupBox4.Controls.Add(this.box4Label16);
+                groupBox4.Controls.Add(this.box4Label4);
+                groupBox4.Controls.Add(this.box4Label8);
+                groupBox4.Controls.Add(this.box4Label11);
+                groupBox4.Controls.Add(this.box4TextBox3);
+                if(box4CheckBox1.Checked){
+                    groupBox4.Controls.Add(this.box4TextBox2);
+                    groupBox4.Controls.Add(this.box4Label3);
+                    groupBox4.Controls.Add(this.box4Label2);
+                    groupBox4.Controls.Add(this.box4TextBox1);
+                    groupBox4.Controls.Add(this.box4Label9);
+                    groupBox4.Controls.Add(this.box4Label10);
+                box4Pic1.Image = Image.FromFile("Image/Sh2.jpg");
+                }else{
+                    groupBox4.Controls.Remove(this.box4TextBox2);
+                    groupBox4.Controls.Remove(this.box4Label3);
+                    groupBox4.Controls.Remove(this.box4Label2);
+                    groupBox4.Controls.Remove(this.box4TextBox1);
+                    groupBox4.Controls.Remove(this.box4Label9);
+                    groupBox4.Controls.Remove(this.box4Label10);
+                    box4Pic1.Image = Image.FromFile("Image/Sh1.jpg"); 
+                }
+        }
+        private void box4ComboBox2_SelectedValueChanged(object sender, System.EventArgs e){//Отображение интерфейса для бокс4
+            try{
+                string t = box4ComboBox2.Text;
+                groupBox4.Controls.Clear();
+                groupBox4.Controls.Add(this.box4Label1);
+                groupBox4.Controls.Add(this.box4ComboBox2);
+                box4ComboBox2.Text = t;
+            switch(Convert.ToByte(box4ComboBox2.SelectedIndex))
+            {
+                case 0: //Шпилька
+                bradInit();
+                break;
+                case 1://Болт
+                groupBox4.Controls.Add(this.box1Label3);
+                groupBox4.Controls.Add(this.box1TextBox2);
+                break;
+                case 2://Гайка
+                break;
+                case 3://Шайба
+                box4Pic1.Location = new System.Drawing.Point(5,400-180-5);
+                box4Pic1.Size = new System.Drawing.Size(310,180);
+                groupBox4.Controls.Add(this.box4Label5);
+                groupBox4.Controls.Add(this.box4Label6);
+                groupBox4.Controls.Add(this.box4Label7);
+                groupBox4.Controls.Add(this.box4TextBox4);
+                groupBox4.Controls.Add(this.box4TextBox5);
+                groupBox4.Controls.Add(this.box4TextBox6);
+                groupBox4.Controls.Add(this.box4Label12);
+                groupBox4.Controls.Add(this.box4Label13);
+                groupBox4.Controls.Add(this.box4Label14);
+                groupBox4.Controls.Add(this.box4Label15);
+                groupBox4.Controls.Add(this.box4Label16);
+                groupBox4.Controls.Add(this.box4TextBox7);
+                groupBox4.Controls.Add(this.box4Pic1);
+                box4Pic1.Image = Image.FromFile("Image/Sha.jpg");
+                break;
+
+            }
+            }
+            catch
+            {
+
             }
         }
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)// При закрытии формы 1, закрывать субд
@@ -96,11 +196,37 @@ namespace Проект_бд
             TwoZero.Close();
             Diameters.Close();
         }
+        private void washerCalc(){//Расчет шайбы
+            double d1 = Convert.ToDouble(box4TextBox4.Text);
+            double d2 = Convert.ToDouble(box4TextBox5.Text);
+            double S = Convert.ToDouble(box4TextBox6.Text);
+            double ss = Math.Pow(d2/2,2)*Math.PI - Math.Pow(d1/2,2)*Math.PI ;
+            double sp = ss*2 + Math.PI*d1*S + Math.PI*d2*S; 
+            box4TextBox7.Text = sp.ToString();
+        }
         private void box2Button1_Click(object sender, EventArgs e)//    При нажатии на кнопку 1 - Выполнить, происходит рассчет
         {
+            try
+            {
+                switch(Convert.ToByte(box4ComboBox2.SelectedIndex)){
+                    case 0://Шпилька
+                    break;
+                    case 1://Болт
+                    break;
+                    case 2://Гайка
+                    break;
+                    case 3://Шайба
+                    
+                    break;
+                }
+            }
+            catch
+            {
+
+            }
             string query;
             OleDbCommand command;
-            string Step = ""    ;
+            string Step = "";
             string D = box1TextBox1.Text;
             bool smallStep = box1CheckBox1.Checked;
             if(smallStep){
@@ -125,11 +251,13 @@ namespace Проект_бд
                 }
             }
             string Str = box1TextBox3.Text;
-            string LRezb = box1TextBox2.Text;
+            string lRezb = box1TextBox2.Text;
+            string lRezb2 = box4TextBox1.Text;
+            string lShp = box4TextBox2.Text;
             string As = box3TextBox1.Text;
             string Fp = box3TextBox2.Text;
             string Fm = box3TextBox3.Text;
-            string SPov = box3TextBox4.Text;
+            string SPov = box4TextBox7.Text;
 
             D = sZ(D);
             Str = sZ(Str);
@@ -137,7 +265,9 @@ namespace Проект_бд
             Fp = sZ(Fp);
             Fm = sZ(Fm);
             SPov = sZ(SPov);
-            LRezb = sZ(LRezb);
+            lRezb = sZ(lRezb);
+            lRezb2 = sZ(lRezb2);
+            lShp = sZ(lShp);
 
             string sZ(string o){
                 if(o == ""){
@@ -205,30 +335,64 @@ namespace Проект_бд
             double L1;
             double d_ = 0;
             double s_ = 0;
-            double l_ = 0;
+            double l1 = 0;
+            double l2 = 0;
+            double lSp = 0;
             double H = 0;
+
             try
             {
             d_ = Convert.ToDouble(D);//Номинальный диаметр
             s_ = Convert.ToDouble(Step);//Шаг резьбы
-            l_ = Convert.ToDouble(LRezb);//Длина резьбы
+            l1 = Convert.ToDouble(lRezb);//Длина резьбы
+            l2 = Convert.ToDouble(lRezb2);//Длина резьбы второго участка
+            lSp = Convert.ToDouble(lShp);//Длина шпильки
             H = 0.866025404 * s_ * (Math.Cos(30*Math.PI/180));//Высота исходного треугольника по ГОСТ 9150-2002
             }
             catch
             {
 
             }
-            try //Расчет площади полной поверхности резьбы
+            try{
+            switch(Convert.ToByte(box4ComboBox2.SelectedIndex))
             {
-                L1 = Math.Sqrt(Math.Pow(Math.PI*d_,2)+Math.Pow(s_,2));//Длина одного витка линии по Учебному пособию 1, с 6
-                L = (l_ / s_) * L1;//Длина всей спирали
-                double sp_ = H * L * 2;//Площадь поверхности
-                sp_ += 2 * Convert.ToDouble(As);//Площадь поверхности с учетом торцев
-                SPov = sp_.ToString();
+                case 0:
+                try //Расчет площади полной поверхности резьбы
+                {
+                    if(box4CheckBox1.Checked)
+                    {
+                        L1 = Math.Sqrt(Math.Pow(Math.PI*d_,2)+Math.Pow(s_,2));//Длина одного витка линии по Учебному пособию 1, с 6
+                        L = ((l1 + l2) / s_) * L1;//Длина резьбы 1+2
+                        double sp_ = H * L * 2;//Площадь поверхности резьбы
+                        box4TextBox3.Text = sp_.ToString();
+                        sp_ += lSp / s_ * L1;//Площадь поверхности без учета торцев
+                        sp_ += 2 * Convert.ToDouble(As);//Площадь поверхности с учетом торцев
+                        SPov = sp_.ToString();
+                    }
+                    else
+                    {
+                        L1 = Math.Sqrt(Math.Pow(Math.PI*d_,2)+Math.Pow(s_,2));//Длина одного витка линии по Учебному пособию 1, с 6
+                        L = (l1 / s_) * L1;//Длина всей спирали
+                        double sp_ = H * L * 2;//Площадь поверхности
+                        box4TextBox3.Text = sp_.ToString();
+                        sp_ += 2 * Convert.ToDouble(As);//Площадь повеxрхности с учетом торцев
+                        SPov = sp_.ToString();
+                    }
+                }
+                catch
+                {
+                }
+                break;
+                case 1:
+                break;
+                case 2:
+                break;
+                case 3:
+                washerCalc();
+                break;
             }
-            catch
-            {
             }
+            catch{}
             //Значение площади сечения
             box3TextBox1.Text = As;
             //Значение пробной нагрузки
@@ -236,10 +400,13 @@ namespace Проект_бд
             //Значение разрушающей нагрузки
             box3TextBox3.Text = Fm;
             //Значение полной площади поверхности резьбы
-            if(d_> 0 && l_ > 0 && s_ > 0){
-            box3TextBox4.Text = SPov;
-            }else{
-                box3TextBox4.Text = '0'.ToString();
+            if(d_> 0 && l1 > 0 && s_ > 0 && Convert.ToByte(box4ComboBox2.SelectedIndex) == 0)
+            {
+                box4TextBox7.Text = SPov;
+            }
+            else
+            {
+                //box3TextBox4.Text = '0'.ToString();
             }
         }
     
