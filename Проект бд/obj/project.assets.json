@@ -1178,11 +1178,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Danil Sukhanov\\Documents\\GitHub\\Project-Based-Learning\\Проект бд\\Проект бд.csproj",
+      "projectUniqueName": "C:\\Users\\Danil Sukhanov\\Documents\\Project-Based-Learning\\Проект бд\\Проект бд.csproj",
       "projectName": "Проект бд",
-      "projectPath": "C:\\Users\\Danil Sukhanov\\Documents\\GitHub\\Project-Based-Learning\\Проект бд\\Проект бд.csproj",
+      "projectPath": "C:\\Users\\Danil Sukhanov\\Documents\\Project-Based-Learning\\Проект бд\\Проект бд.csproj",
       "packagesPath": "C:\\Users\\Danil Sukhanov\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Danil Sukhanov\\Documents\\GitHub\\Project-Based-Learning\\Проект бд\\obj\\",
+      "outputPath": "C:\\Users\\Danil Sukhanov\\Documents\\Project-Based-Learning\\Проект бд\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1193,7 +1193,7 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net6.0-windows"
+        "net6.0-windows7.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},

@@ -111,41 +111,41 @@
             box1Label1.TabIndex = 1;
             //box1Label2 Шаг:
             box1Label2.Location = new System.Drawing.Point (84,0);
-            box1Label2.Top = box1Label1.Top + 30;
+            box1Label2.Top = 62;
             box1Label2.Text = "Шаг:";
             box1Label2.Size = new System.Drawing.Size (36,16);
             box1Label2.TabIndex = 2;
             //box1Label3 Класс прочности:
             box1Label4.Location = new System.Drawing.Point (11,0);
-            box1Label4.Top = box1Label2.Top + 30;
+            box1Label4.Top = 92;
             box1Label4.Text = "Класс прочности:";
             box1Label4.Size = new System.Drawing.Size (109,16);
             box1Label4.TabIndex = 2;
             //TextBoxes
             //
             //box1TextBox1 D
-            box1TextBox1.Left = box1Label1.Left + box1Label1.Width;
-            box1TextBox1.Top = box1Label1.Top - 5;
+            box1TextBox1.Left = 126;
+            box1TextBox1.Top = 27;
             box1TextBox1.Size = new System.Drawing.Size(70,20);
             box1TextBox1.TabIndex = 1;
             //box1TextBox3 Strenght
-            box1TextBox3.Left = box1TextBox1.Left; 
-            box1TextBox3.Top = box1Label4.Top - 5;
+            box1TextBox3.Left = 126; 
+            box1TextBox3.Top = 87;
             box1TextBox3.Size = new System.Drawing.Size(70,20);
             box1TextBox3.TabIndex = 4;
             //
             //Buttons
             //box1Button1 Поясняющая кнопка
-            box1Button1.Top = box1Label4.Top - 5;
-            box1Button1.Left = box1TextBox3.Left + box1TextBox3.Width + 5;
+            box1Button1.Top = 87;
+            box1Button1.Left = 201;
             box1Button1.Size = new System.Drawing.Size(30,25);
             box1Button1.Image = Image.FromFile("Quest.png");
             box1Button1.TabIndex = 4;
             //
             //CheckBoxes
             //CheckBox1 Мелкий шаг
-            box1CheckBox1.Left = box1Label1.Left + box1Label1.Width + box1TextBox1.Width + 5;
-            box1CheckBox1.Top = box1Label1.Top;
+            box1CheckBox1.Left = 201;
+            box1CheckBox1.Top = 32;
             box1CheckBox1.Text = "Мелкий шаг";
             box1CheckBox1.Size = new System.Drawing.Size(96,16);
             box1CheckBox1.TabIndex = 1;
@@ -153,8 +153,8 @@
             //
             //ComboBoxes
             //box1ComboBox1 Step
-            box1ComboBox1.Left = box1TextBox1.Left; 
-            box1ComboBox1.Top = box1Label2.Top - 5;
+            box1ComboBox1.Left = 126; 
+            box1ComboBox1.Top = 57;
             box1ComboBox1.Size = new System.Drawing.Size(70,20);
             box1ComboBox1.TabIndex = 2;
             //
@@ -162,7 +162,7 @@
             //Buttons
             //box2Button1 Кнопка расчета
             box2Button1.Left = 15;
-            box2Button1.Top = box1TextBox1.Top - 5;
+            box2Button1.Top = 22;
             box2Button1.TextAlign = ContentAlignment.MiddleCenter;
             box2Button1.Text = "Выполнить";
             box2Button1.Size = new System.Drawing.Size(295,25);
@@ -176,50 +176,50 @@
             box3Label1.Size = new System.Drawing.Size(200,16);
             box3Label1.TabIndex = 1;
             //box3Label3 Пробная нагрузка, Fp:
-            box3Label3.Left = box3Label1.Left + 70;
-            box3Label3.Top = box3Label1.Top + 30;
+            box3Label3.Left = 85;
+            box3Label3.Top = 66;
             box3Label3.Text = "Пробная нагрузка, Fp:";
             box3Label3.Size = new System.Drawing.Size(130,16);
             box3Label3.TabIndex = 1;
             //box3Label5 Разрушающая нагрузка, Fm,min:
-            box3Label5.Left = box3Label1.Left + 8;
-            box3Label5.Top = box3Label3.Top + 30;
+            box3Label5.Left = 23;
+            box3Label5.Top = 96;
             box3Label5.Text = "Разрушающая нагрузка, Fm, min:";
             box3Label5.Size = new System.Drawing.Size(192,16);
             box3Label5.TabIndex = 1;
             //
             //TextBoxes
             //box3TextBox1
-            box3TextBox1.Left = box3Label1.Left + box3Label1.Width;
-            box3TextBox1.Top = box3Label1.Top - 5;
+            box3TextBox1.Left = 215;
+            box3TextBox1.Top = 31;
             box3TextBox1.Size = new System.Drawing.Size(70, 20);
             box3TextBox1.TabIndex = 5;
             //box3TextBox2
-            box3TextBox2.Left = box3TextBox1.Left;
-            box3TextBox2.Top = box3Label3.Top - 5;
+            box3TextBox2.Left = 215;
+            box3TextBox2.Top = 61;
             box3TextBox2.Size = new System.Drawing.Size(70, 20);
             box3TextBox2.TabIndex = 6;
             //box3TextBox3
-            box3TextBox3.Left = box3TextBox1.Left;
-            box3TextBox3.Top = box3Label5.Top - 5;
+            box3TextBox3.Left = 215;
+            box3TextBox3.Top = 91;
             box3TextBox3.Size = new System.Drawing.Size(70, 20);
             box3TextBox3.TabIndex = 7;
             //Labels
             //box3Label2 мм2
-            box3Label2.Left = box3TextBox1.Left + box3TextBox1.Width;
-            box3Label2.Top = box3Label1.Top;
+            box3Label2.Left = 285;
+            box3Label2.Top = 36;
             box3Label2.Text = "мм2";
             box3Label2.Size = new System.Drawing.Size(32,16);
             box3Label2.TabIndex = 1;
             //box3Label4 Н
-            box3Label4.Left = box3TextBox2.Left + box3TextBox2.Width;
-            box3Label4.Top = box3Label3.Top;
+            box3Label4.Left = 285;
+            box3Label4.Top = 66;
             box3Label4.Text = "Н";
             box3Label4.Size = new System.Drawing.Size(16,16);
             box3Label4.TabIndex = 1;
             //box3Label6 Н
-            box3Label6.Left = box3TextBox3.Left + box3TextBox3.Width;
-            box3Label6.Top = box3Label5.Top;
+            box3Label6.Left = 285;
+            box3Label6.Top = 96;
             box3Label6.Text = "Н";
             box3Label6.Size = new System.Drawing.Size(16,16);
             box3Label6.TabIndex = 1;
@@ -231,143 +231,144 @@
             box4Label1.Size = new System.Drawing.Size(60,16);
             box4Label1.TabIndex = 1;
             //ComboBoxes Product
-            box4ComboBox2.Top = box4Label1.Top;
-            box4ComboBox2.Left = box4Label1.Right;
+            box4ComboBox2.Top = 32;
+            box4ComboBox2.Left = 150;
             box4ComboBox2.Items.AddRange(new object[4]{"Шпилька", "Болт", "Гайка", "Шайба"});
             box4ComboBox2.Text = "Выберите из списка";
+            box4ComboBox2.Size = new System.Drawing.Size(120, 32);
             //box1Label3 Длина резьбы:
-            box1Label3.Left = box4ComboBox2.Right - 70 - 105;
-            box1Label3.Top = box4Label1.Top + 35;
+            box1Label3.Left = 95;
+            box1Label3.Top = 67;
             box1Label3.Text = "Длина резьбы l1:";
             box1Label3.Size = new System.Drawing.Size (105,16);
             box1Label3.TabIndex = 2;
             //box1TextBox2 Длина резьбы
-            box1TextBox2.Left = box4ComboBox2.Right - 70; 
-            box1TextBox2.Top = box1Label3.Top - 5;
+            box1TextBox2.Left = 200; 
+            box1TextBox2.Top = 62;
             box1TextBox2.Size = new System.Drawing.Size(70,20);
             box1TextBox2.TabIndex = 3;
             //box4Label8 мм
-            box4Label8.Left = box1TextBox2.Left + box1TextBox2.Width;
-            box4Label8.Top = box1Label3.Top;
+            box4Label8.Left = 270;
+            box4Label8.Top = 67;
             box4Label8.Text = "мм";
             box4Label8.Size = new System.Drawing.Size(32,16);
             box4Label8.TabIndex = 1;
             //box4CheckBox1 
-            box4CheckBox1.Left = box4ComboBox2.Right - 135;
-            box4CheckBox1.Top = box1Label3.Top + 30;
+            box4CheckBox1.Left = 135;
+            box4CheckBox1.Top = 97;
             box4CheckBox1.Text = "Резьба с двух сторон";
             box4CheckBox1.Size = new System.Drawing.Size(160,20);
             box4CheckBox1.TabIndex = 1;
             box4CheckBox1.Visible = true;
             //box4Label2 Длина резьбы второго участка
-            box4Label2.Left = box4ComboBox2.Right - 70 - 105;
-            box4Label2.Top = box4CheckBox1.Top + 30;
+            box4Label2.Left = 95;
+            box4Label2.Top = 107;
             box4Label2.Text = "Длина резьбы l2:";
             box4Label2.Size = new System.Drawing.Size(105,20);
             //box4TextBox1
-            box4TextBox1.Left = box4ComboBox2.Right - 70;
-            box4TextBox1.Top = box4Label2.Top - 5;
+            box4TextBox1.Left = 200;
+            box4TextBox1.Top = 102;
             box4TextBox1.Size = new System.Drawing.Size(70,20);
             //box4Label9 мм
-            box4Label9.Left = box4TextBox1.Left + box4TextBox1.Width;
-            box4Label9.Top = box4Label2.Top;
+            box4Label9.Left = 270;
+            box4Label9.Top = 107;
             box4Label9.Text = "мм";
             box4Label9.Size = new System.Drawing.Size(32,16);
             box4Label9.TabIndex = 1;
             //box4Label3 Длина шпильки
-            box4Label3.Left = box4ComboBox2.Right - 70 - 115;
-            box4Label3.Top = box4Label2.Top + 30;
+            box4Label3.Left = 85;
+            box4Label3.Top = 137;
             box4Label3.Text = "Длина шпильки L:";
             box4Label3.Size = new System.Drawing.Size(115,20);
             //box4TextBox2
-            box4TextBox2.Left = box4ComboBox2.Right - 70;
-            box4TextBox2.Top = box4Label3.Top - 5;
+            box4TextBox2.Left = 200;
+            box4TextBox2.Top = 132;
             box4TextBox2.Size = new System.Drawing.Size(70,20);
             //box4Label10 мм
-            box4Label10.Left = box4TextBox2.Left + box4TextBox2.Width;
-            box4Label10.Top = box4Label3.Top;
+            box4Label10.Left = 270;
+            box4Label10.Top = 137;
             box4Label10.Text = "мм";
             box4Label10.Size = new System.Drawing.Size(32,16);
             box4Label10.TabIndex = 1;
             //box4Image
             box4Pic1.SizeMode = PictureBoxSizeMode.StretchImage;
             box4Pic1.Image = Image.FromFile("Image/Sh1.jpg");
-            box4Pic1.Location = new System.Drawing.Point(5,400-145-5);
+            box4Pic1.Location = new System.Drawing.Point(5,250);
             box4Pic1.Size = new System.Drawing.Size(310,145);
             //box4Label15 Площадь поверхности резьбы, Sпов:
-            box4Label15.Left = box4ComboBox2.Right - 70 - 150;
-            box4Label15.Top = box4Label3.Top + 30;
+            box4Label15.Left = 50;
+            box4Label15.Top = 167;
             box4Label15.Text = "Площадь поверхности А:";
             box4Label15.Size = new System.Drawing.Size(150,16);
             box4Label15.TabIndex = 8;
             //box3TextBox4
-            box4TextBox7.Left = box4ComboBox2.Right - 70;
-            box4TextBox7.Top = box4Label15.Top - 5;
+            box4TextBox7.Left = 200;
+            box4TextBox7.Top = 162;
             box4TextBox7.Size = new System.Drawing.Size(70, 20);
             box4TextBox7.TabIndex = 8;
             //box4Label6 мм2
-            box4Label16.Left = box4TextBox7.Left + box4TextBox7.Width;
-            box4Label16.Top = box4Label15.Top;
+            box4Label16.Left = 270;
+            box4Label16.Top = 167;
             box4Label16.Text = "мм2";
             box4Label16.Size = new System.Drawing.Size(32,16);
             box4Label16.TabIndex = 1;
             //box4Label4 Площадь полной поверхности
-            box4Label4.Left = box4ComboBox2.Right - 70 - 180;
-            box4Label4.Top = box4Label15.Top + 30;
+            box4Label4.Left = 20;
+            box4Label4.Top = 197;
             box4Label4.Text = "Площадь поверхности резьбы:";
             box4Label4.Size = new System.Drawing.Size(180,20);
             //box4TextBox3
-            box4TextBox3.Left = box4ComboBox2.Right - 70;
-            box4TextBox3.Top = box4Label4.Top - 5;
+            box4TextBox3.Left = 200;
+            box4TextBox3.Top = 192;
             box4TextBox3.Size = new System.Drawing.Size(70,20);
             //box4Label11 мм2
-            box4Label11.Left = box4TextBox3.Left + box4TextBox3.Width;
-            box4Label11.Top = box4Label4.Top;
+            box4Label11.Left = 270;
+            box4Label11.Top = 197;
             box4Label11.Text = "мм2";
             box4Label11.Size = new System.Drawing.Size(32,16);
             box4Label11.TabIndex = 1;
             //box4Label5 Внутренний диаметр d1:
-            box4Label5.Left = box4ComboBox2.Right - 70 - 145;
-            box4Label5.Top = box4ComboBox2.Top + 35;
+            box4Label5.Left = 55;
+            box4Label5.Top = 67;
             box4Label5.Text = "Внутренний диаметр d1:";
             box4Label5.Size = new System.Drawing.Size(145,20);
             //box4Label6 Внешний диаметр d2:
-            box4Label6.Left = box4Label5.Right - 132;
-            box4Label6.Top = box4Label5.Top + 30;
+            box4Label6.Left = 68;
+            box4Label6.Top = 97;
             box4Label6.Text = "Внешний диаметр d2:";
             box4Label6.Size = new System.Drawing.Size(132,20);
             //box4Label7 Толщина S:
-            box4Label7.Left = box4Label6.Right - 75;
-            box4Label7.Top = box4Label6.Top + 30;
+            box4Label7.Left = 125;
+            box4Label7.Top = 127;
             box4Label7.Text = "Толщина S:";
             box4Label7.Size = new System.Drawing.Size(75,20);
             //box4TextBox4
-            box4TextBox4.Left = box4ComboBox2.Right - 70;
-            box4TextBox4.Top = box4Label5.Top - 5;
+            box4TextBox4.Left = 200;
+            box4TextBox4.Top = 62;
             box4TextBox4.Size = new System.Drawing.Size(70,20);
             //box4TextBox5
-            box4TextBox5.Left = box4ComboBox2.Right - 70;
-            box4TextBox5.Top = box4Label6.Top - 5;
+            box4TextBox5.Left = 200;
+            box4TextBox5.Top = 92;
             box4TextBox5.Size = new System.Drawing.Size(70,20);
             //box4TextBox6
-            box4TextBox6.Left = box4ComboBox2.Right - 70;
-            box4TextBox6.Top = box4Label7.Top - 5;
+            box4TextBox6.Left = 200;
+            box4TextBox6.Top = 122;
             box4TextBox6.Size = new System.Drawing.Size(70,20);
             //box4Label12 мм2
-            box4Label12.Left = box4TextBox4.Left + box4TextBox4.Width;
-            box4Label12.Top = box4Label5.Top;
+            box4Label12.Left = 270;
+            box4Label12.Top = 67;
             box4Label12.Text = "мм";
             box4Label12.Size = new System.Drawing.Size(32,16);
             box4Label12.TabIndex = 1;
             //box4Label13 мм2
-            box4Label13.Left = box4TextBox5.Left + box4TextBox5.Width;
-            box4Label13.Top = box4Label6.Top;
+            box4Label13.Left = 270;
+            box4Label13.Top = 97;
             box4Label13.Text = "мм";
             box4Label13.Size = new System.Drawing.Size(32,16);
             box4Label13.TabIndex = 1;
             //box4Label14 мм2
-            box4Label14.Left = box4TextBox6.Left + box4TextBox6.Width;
-            box4Label14.Top = box4Label7.Top;
+            box4Label14.Left = 270;
+            box4Label14.Top = 127;
             box4Label14.Text = "мм";
             box4Label14.Size = new System.Drawing.Size(32,16);
             box4Label14.TabIndex = 1;
@@ -450,18 +451,18 @@
             groupBox1.Text = "Исходные данные";
             groupBox1.Size = new System.Drawing.Size (325,150);
             //groupBox2
-            groupBox2.Left = groupBox1.Left;
-            groupBox2.Top = groupBox1.Top + groupBox1.Height + 10;
+            groupBox2.Left = 10;
+            groupBox2.Top = 345;
             groupBox2.Text = "Расчет";
             groupBox2.Size = new System.Drawing.Size (325,60);
             //groupBox3
-            groupBox3.Left = groupBox1.Left;
-            groupBox3.Top = groupBox2.Top + groupBox2.Height + 10;
+            groupBox3.Left = 10;
+            groupBox3.Top = 215;
             groupBox3.Text = "Результаты расчета";
             groupBox3.Size = new System.Drawing.Size (325,170);
             //groupBox4
-            groupBox4.Top = groupBox1.Top;
-            groupBox4.Left = groupBox1.Size.Width + 20;
+            groupBox4.Top = 10;
+            groupBox4.Left = 345;
             groupBox4.Text = "Расчет площади поверхности";
             groupBox4.Size = new System.Drawing.Size(325, 400);
             //
